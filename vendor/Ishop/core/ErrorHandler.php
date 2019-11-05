@@ -25,7 +25,7 @@ class ErrorHandler
 
     protected function logErrors($message = '', $file = '', $line = '')
     {
-        error_log("[" . date('Y-m-d H:i:s') . "] Текст ошибки: {$message} | Файл: {$file} | Строка: {$line} \n-------------\n", 3, ROOT . '/tmp/errors.log');
+        error_log("[" . date('Y-m-d H:i:s') . "] Текст ошибки: {$message} | Файл: {$file} | Строка: {$line} \n-------------\n", 3, ROOT . '/public/errors/errors.log');
     }
 
     protected function displayError($errno, $errstr, $errfile, $errline, $response = 404)
