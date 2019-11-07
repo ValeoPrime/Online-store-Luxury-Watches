@@ -60,3 +60,5 @@
 -------------
 [2019-11-05 19:01:00] Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 37 
 -------------
+[2019-11-07 09:20:43] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 40 
+-------------

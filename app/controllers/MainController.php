@@ -4,10 +4,13 @@
 namespace app\controllers;
 
 
-class MainController
+
+class MainController extends AppController
 {
+
     public function indexAction(){
-    echo '<h1>все фурычит епта)))</h1>';
+
+        debug($this->route);
     }
 }
 
