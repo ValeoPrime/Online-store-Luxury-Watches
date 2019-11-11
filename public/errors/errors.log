@@ -62,3 +62,23 @@
 -------------
 [2019-11-07 09:20:43] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 40 
 -------------
+[2019-11-08 10:50:53] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 40 
+-------------
+[2019-11-08 11:08:19] Текст ошибки: Не найден вид I:\OSPanel\domains\Online-store-Luxury-Watches/app/views/Main/index.php | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\base\View.php | Строка: 44 
+-------------
+[2019-11-08 11:08:33] Текст ошибки: Не найден вид I:\OSPanel\domains\Online-store-Luxury-Watches/app/views/Main/index.php | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\base\View.php | Строка: 44 
+-------------
+[2019-11-08 11:31:38] Текст ошибки: Call to undefined method app\controllers\MainController::getMeta() | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 34 
+-------------
+[2019-11-08 11:33:55] Текст ошибки: Call to undefined method app\controllers\MainController::getMeta() | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 34 
+-------------
+[2019-11-08 11:34:20] Текст ошибки: Call to undefined method app\controllers\MainController::getMeta() | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 34 
+-------------
+[2019-11-08 13:26:03] Текст ошибки: Call to undefined method app\controllers\MainController::getMeta() | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 34 
+-------------
+[2019-11-08 13:34:26] Текст ошибки: Call to undefined method app\controllers\MainController::getMeta() | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 34 
+-------------
+[2019-11-08 13:40:31] Текст ошибки: Call to undefined method app\controllers\MainController::getMeta() | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 35 
+-------------
+[2019-11-11 08:34:54] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 43 
+-------------

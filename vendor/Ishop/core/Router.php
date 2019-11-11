@@ -30,6 +30,9 @@ class Router
                 $action = self::lowerCamelCase(self::$route['action']) . 'Action';
                 if(method_exists($controllerObject, $action)){
                     $controllerObject->$action();
+                    $controllerObject->getView();
+//                    $controllerObject->setMeta('Заголовок','Описание' ,'Ключевики');
+
                 }else{
                     throw new \Exception("Метод $controller::$action не найден", 404);
                 }
