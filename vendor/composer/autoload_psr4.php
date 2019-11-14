@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'app\\' => array($baseDir . '/app'),
+    'RedBeanPHP\\' => array($vendorDir . '/gabordemooij/redbean/RedBeanPHP'),
     'Ishop\\' => array($vendorDir . '/Ishop/core'),
 );
