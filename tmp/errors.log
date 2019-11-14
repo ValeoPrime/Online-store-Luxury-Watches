@@ -372,3 +372,19 @@
 -------------
 [2019-11-14 11:27:50] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
 -------------
+[2019-11-14 13:44:09] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
+[2019-11-14 13:44:12] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
+[2019-11-14 13:44:17] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
+[2019-11-14 13:48:33] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
+[2019-11-14 18:51:58] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ishop2.test' doesn't exist | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194 
+-------------
+[2019-11-14 18:51:59] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
+[2019-11-14 19:16:03] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ishop2.test' doesn't exist | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194 
+-------------
+[2019-11-14 19:20:25] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ishop2.test' doesn't exist | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194 
+-------------
