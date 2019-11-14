@@ -10,6 +10,6 @@ new \Ishop\App();
 //debug(\Ishop\App::$app->getProperties());
 
 //throw new Exception('Нихера не работает', 500);
-echo '<br>Ты там где надо';
+//echo '<br>Ты там где надо';
 
 //debug(\Ishop\Router::getRoutes());
