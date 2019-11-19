@@ -400,3 +400,11 @@
 -------------
 [2019-11-18 11:11:56] Текст ошибки: Too few arguments to function Ishop\Registry::setProperty(), 1 passed in I:\OSPanel\domains\Online-store-Luxury-Watches\app\controllers\AppController.php on line 20 and exactly 2 expected | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Registry.php | Строка: 13 
 -------------
+[2019-11-19 09:15:18] Текст ошибки: Too few arguments to function Ishop\Registry::setProperty(), 1 passed in I:\OSPanel\domains\Online-store-Luxury-Watches\app\views\Main\index.php on line 46 and exactly 2 expected | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Registry.php | Строка: 13 
+-------------
+[2019-11-19 09:15:18] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
+[2019-11-19 09:16:08] Текст ошибки: Too few arguments to function Ishop\Registry::setProperty(), 1 passed in I:\OSPanel\domains\Online-store-Luxury-Watches\app\views\Main\index.php on line 46 and exactly 2 expected | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Registry.php | Строка: 13 
+-------------
+[2019-11-19 09:18:44] Текст ошибки: Страница не найдена | Файл: I:\OSPanel\domains\Online-store-Luxury-Watches\vendor\Ishop\core\Router.php | Строка: 44 
+-------------
