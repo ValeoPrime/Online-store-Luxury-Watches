@@ -176,6 +176,7 @@ class Uuid extends Postgres
 
 		R::debug(1);
 		$id = R::store( $mansion );
+		//exit;
 
 		asrt( is_string( $id ), TRUE );
 		asrt( strlen( $id ), 36 );

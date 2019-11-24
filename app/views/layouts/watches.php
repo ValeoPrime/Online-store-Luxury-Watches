@@ -9,6 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <?=$this->getMeta();?>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--Custom-Theme-files-->
     <!--theme-style-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -67,7 +69,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container">
         <div class="header">
             <div class="col-md-9 header-left">
-                <div class="top-nav">
+                <div class="menu-container">
+                    <div class="menu">
+                        <?php new \app\widgets\menu\Menu([
+                            'tpl' => WWW . '/menu/menu.php',
+                        ]); ?>
+                    </div>
+                </div>
+                <!--<div class="top-nav">
                     <ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
                         <li class="grid"><a href="#">Men</a>
                             <div class="mepanel">
@@ -203,7 +212,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li class="grid"><a href="contact.html">Contact</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
                 <div class="clearfix"> </div>
             </div>
             <div class="col-md-3 header-right">
@@ -313,6 +322,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     });
 </script>
+<script src="megamenu/js/megamenu.js"></script>
 <script src="js/main.js"></script>
 <!--End-slider-script-->
 </body>

@@ -4,9 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4571b5b63a0fc61067695554f3279bca
+class ComposerStaticInit0dabf51485c17910d99e5a88c66a2ed6
 {
     public static $prefixLengthsPsr4 = array (
+        'i' => 
+        array (
+            'ishop\\' => 6,
+        ),
         'a' => 
         array (
             'app\\' => 4,
@@ -15,13 +19,13 @@ class ComposerStaticInit4571b5b63a0fc61067695554f3279bca
         array (
             'RedBeanPHP\\' => 11,
         ),
-        'I' => 
-        array (
-            'Ishop\\' => 6,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'ishop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ishop/core',
+        ),
         'app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -30,17 +34,13 @@ class ComposerStaticInit4571b5b63a0fc61067695554f3279bca
         array (
             0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
         ),
-        'Ishop\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/Ishop/core',
-        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4571b5b63a0fc61067695554f3279bca::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4571b5b63a0fc61067695554f3279bca::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0dabf51485c17910d99e5a88c66a2ed6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0dabf51485c17910d99e5a88c66a2ed6::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

@@ -30,21 +30,12 @@ use RedBeanPHP\Repository as Repository;
 class Frozen extends Repository
 {
 	/**
-	 * Exception handler.
-	 * Fluid and Frozen mode have different ways of handling
-	 * exceptions. Fluid mode (using the fluid repository) ignores
-	 * exceptions caused by the following:
+	 * Handles exceptions.
+	 * In fluid mode, this suppresses exceptions caused by missing structures.
+	 * However the implementation in frozen mode is rather the opposite, it
+	 * will just re-throw every exception.
 	 *
-	 * - missing tables
-	 * - missing column
-	 *
-	 * In these situations, the repository will behave as if
-	 * no beans could be found. This is because in fluid mode
-	 * it might happen to query a table or column that has not been
-	 * created yet. In frozen mode, this is not supposed to happen
-	 * and the corresponding exceptions will be thrown.
-	 *
-	 * @param \Exception $exception exception
+	 * @param \Exception $exception exception to handle
 	 *
 	 * @return void
 	 */
@@ -131,6 +122,36 @@ class Frozen extends Repository
 	}
 
 	/**
+	 * Dispenses a new bean (a OODBBean Bean Object)
+	 * of the specified type. Always
+	 * use this function to get an empty bean object. Never
+	 * instantiate a OODBBean yourself because it needs
+	 * to be configured before you can use it with RedBean. This
+	 * function applies the appropriate initialization /
+	 * configuration for you.
+	 *
+	 * @param string  $type              type of bean you want to dispense
+	 * @param int  $number            number of beans you would like to get
+	 * @param boolean $alwaysReturnArray if TRUE always returns the result as an array
+	 *
+	 * @return OODBBean
+	 */
+	public function dispense( $type, $number = 1, $alwaysReturnArray = FALSE )
+	{
+		$OODBBEAN = defined( 'REDBEAN_OODBBEAN_CLASS' ) ? REDBEAN_OODBBEAN_CLASS : '\RedBeanPHP\OODBBean';
+		$beans = array();
+		for ( $i = 0; $i < $number; $i++ ) {
+			/** @var \RedBeanPHP\OODBBean $bean */
+			$bean = new $OODBBEAN;
+			$bean->initializeForDispense( $type, $this->oodb->getBeanHelper() );
+			$this->oodb->signal( 'dispense', $bean );
+			$beans[] = $bean;
+		}
+
+		return ( count( $beans ) === 1 && !$alwaysReturnArray ) ? array_pop( $beans ) : $beans;
+	}
+
+	/**
 	 * Loads a bean from the object database.
 	 * It searches for a OODBBean Bean Object in the
 	 * database. It does not matter how this bean has been stored.
@@ -155,13 +176,23 @@ class Frozen extends Repository
 	 */
 	public function load( $type, $id )
 	{
-		$rows = array();
 		$bean = $this->dispense( $type );
 		if ( isset( $this->stash[$this->nesting][$id] ) ) {
 			$row = $this->stash[$this->nesting][$id];
 		} else {
-			$rows = $this->writer->queryRecord( $type, array( 'id' => array( $id ) ) );
-			if ( !count( $rows ) ) {
+			try {
+				$rows = $this->writer->queryRecord( $type, array( 'id' => array( $id ) ) );
+			} catch ( SQLException $exception ) {
+				if ( $this->writer->sqlStateIn( $exception->getSQLState(),
+					array(
+						QueryWriter::C_SQLSTATE_NO_SUCH_COLUMN,
+						QueryWriter::C_SQLSTATE_NO_SUCH_TABLE )
+				)
+				) {
+					throw $exception; //only throw if frozen
+				}
+			}
+			if ( empty( $rows ) ) {
 				return $bean;
 			}
 			$row = array_pop( $rows );

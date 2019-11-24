@@ -1,13 +1,11 @@
 <?php
 
+namespace ishop\base;
 
-namespace Ishop\base;
+use ishop\Db;
 
+abstract class Model{
 
-use Ishop\Db;
-
-abstract class Model
-{
     public $attributes = [];
     public $errors = [];
     public $rules = [];

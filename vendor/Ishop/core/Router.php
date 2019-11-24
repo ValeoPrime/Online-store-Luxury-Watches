@@ -1,17 +1,14 @@
 <?php
 
+namespace ishop;
 
-namespace Ishop;
+class Router{
 
+    protected static $routes = [];
+    protected static $route = [];
 
-class Router
-{
-
-    protected static $routes = []; //таблица маршрутов
-    protected static $route = []; //запрошенный адрес
-
-    public static function add ($regexp, $route = [] ) {
-    self::$routes [$regexp] = $route;
+    public static function add($regexp, $route = []){
+        self::$routes[$regexp] = $route;
     }
 
     public static function getRoutes(){
@@ -32,8 +29,6 @@ class Router
                 if(method_exists($controllerObject, $action)){
                     $controllerObject->$action();
                     $controllerObject->getView();
-//                    $controllerObject->setMeta('Заголовок','Описание' ,'Ключевики');
-
                 }else{
                     throw new \Exception("Метод $controller::$action не найден", 404);
                 }
@@ -45,41 +40,37 @@ class Router
         }
     }
 
-    public static function matchRoute ($url) {
-        foreach (self::$routes as $pattern => $route) {
-            if (preg_match("#$pattern#", $url, $matches)){
-                foreach ($matches as $k => $v){
-                    if (is_string($k)){
+    public static function matchRoute($url){
+        foreach(self::$routes as $pattern => $route){
+            if(preg_match("#{$pattern}#", $url, $matches)){
+                foreach($matches as $k => $v){
+                    if(is_string($k)){
                         $route[$k] = $v;
                     }
                 }
-                if (empty($route['action'])){
+                if(empty($route['action'])){
                     $route['action'] = 'index';
                 }
-                if (!isset($route['prefix'])){
+                if(!isset($route['prefix'])){
                     $route['prefix'] = '';
                 }else{
                     $route['prefix'] .= '\\';
                 }
                 $route['controller'] = self::upperCamelCase($route['controller']);
                 self::$route = $route;
-
-
                 return true;
             }
         }
         return false;
     }
 
-
-    //CamelCase
-    protected static function upperCamelCase($name) {
+    // CamelCase
+    protected static function upperCamelCase($name){
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
-
     }
 
-    //camelCase
-    protected static function lowerCamelCase ($name){
+    // camelCase
+    protected static function lowerCamelCase($name){
         return lcfirst(self::upperCamelCase($name));
     }
 
@@ -93,4 +84,5 @@ class Router
             }
         }
     }
+
 }

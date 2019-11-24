@@ -1,34 +1,27 @@
 <?php
 
-
-namespace Ishop;
-
-
-use http\QueryString;
+namespace ishop;
 
 class App{
-    public static $app;
 
+    public static $app;
 
     public function __construct(){
         $query = trim($_SERVER['QUERY_STRING'], '/');
         session_start();
         self::$app = Registry::instance();
-        $this ->getParams();
+        $this->getParams();
         new ErrorHandler();
         Router::dispatch($query);
     }
 
-    protected function getParams () {
+    protected function getParams(){
         $params = require_once CONF . '/params.php';
-
-        if (!empty($params) && isset($params)&& is_array($params)) {
-            foreach ($params as $k => $v) {
+        if(!empty($params)){
+            foreach($params as $k => $v){
                 self::$app->setProperty($k, $v);
             }
-
-        };
+        }
     }
-
 
 }

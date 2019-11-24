@@ -1,43 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Free 404 White for Iphone, Android & Smartphone Mobile Website Template | Home :: w3layouts</title>
+    <style type="text/css">
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .wrap{
+            width:1000px;
+            margin:0 auto;
+        }
+        .logo{
+            width:430px;
+            position:absolute;
+            top:25%;
+            left:35%;
+        }
+        p a{
+            color:#eee;
+            font-size:13px;
+            margin-left:30px;
+            padding:5px;
+            background:#FF3366;
+            text-decoration:none;
+            -webkit-border-radius:.3em;
+            -moz-border-radius:.3em;
+            border-radius:.3em;
+        }
+        p a:hover{
+            color: #fff;
+        }
+        .footer{
+            position:absolute;
+            bottom:10px;
+            right:10px;
+            font-size:12px;
+            color:#aaa;
+        }
+        .footer a{
+            color:#666;
+            text-decoration:none;
+        }
 
-    <title>404 HTML Tempalte by Colorlib</title>
-
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="errors/web/css/style.css" />
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    </style>
 </head>
-
 <body>
-
-<div id="notfound">
-    <div class="notfound">
-        <div class="notfound-404">
-            <h1>Херня какая;)!</h1>
-        </div>
-        <h2>404 - Page not found</h2>
-        <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
-        <a href="../index.php">Go To Homepage</a>
+<div class="wrap">
+    <div class="logo">
+        <img src="/errors/images/404.png" alt=""  />
+        <p><a href="<?=PATH;?>">Go back to Home</a></p>
     </div>
 </div>
+<div class="footer">
+    Design by - <a href="http://w3layouts.com">W3Layouts</a>
+</div>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+</body>
 </html>
-
