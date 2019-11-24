@@ -56,15 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/watches.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="215" column="45" lean-forward="true" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#2816#12215#0#HTML" />
-              </folding>
+            <state relative-caret-position="1166">
+              <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -78,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/widgets/menu/Menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="476">
+              <caret line="71" column="36" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="36" />
               <folding>
                 <element signature="e#36#50#0#PHP" expanded="true" />
               </folding>
@@ -93,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
+            <state relative-caret-position="484">
               <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
             </state>
           </provider>
@@ -367,11 +363,12 @@
       <workItem from="1574075662285" duration="1809000" />
       <workItem from="1574143832822" duration="1923000" />
       <workItem from="1574580605916" duration="5001000" />
+      <workItem from="1574585877437" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77960000" />
+    <option name="totallyTimeSpent" value="77980000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,9 +576,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/cache/098f6bcd4621d373cade4e832627b4f6.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/cache/098f6bcd4621d373cade4e832627b4f6.txt" />
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css.map">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -682,6 +677,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://5b3965a8-e051-46d9-bce1-1573408087ae/schema/ishop2/table/currency">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5c56f898-c5fb-44f2-ae37-8e6e4afe7f09">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/watches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/menu/menu_tpl/menu.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CurrencyController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -710,22 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://5b3965a8-e051-46d9-bce1-1573408087ae/schema/ishop2/table/currency">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="5c56f898-c5fb-44f2-ae37-8e6e4afe7f09">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/menu/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -733,26 +738,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/menu/menu_tpl/menu.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/widgets/menu/Menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="476">
+          <caret line="71" column="36" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="36" />
           <folding>
             <element signature="e#36#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/watches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="215" column="45" lean-forward="true" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2816#12215#0#HTML" />
           </folding>
         </state>
       </provider>
