@@ -35,7 +35,7 @@ class View {
             require_once $viewFile;
             $content = ob_get_clean();
         }else{
-            throw new \Exception("На найден вид {$viewFile}", 500);
+            throw new \Exception("Не найден вид {$viewFile}", 500);
         }
         if(false !== $this->layout){
             $layoutFile = APP . "/views/layouts/{$this->layout}.php";
